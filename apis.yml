@@ -1,7 +1,28 @@
 aid: fundable
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fundable.png
 name: Fundable
-description: Fundable is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fundable is a software-as-a-service fundraising platform for startups, operated as part of the
+  Startups.com family and surfaced in the API Evangelist network as a portfolio lead of 500 Global.
+  Fundable helps founders start and manage a professional raise to attract accredited investors,
+  providing a secure investor data room, investor browsing and discovery tools, and email outreach
+  templates across Self-Managed and Funding Accelerator Premium tiers. The platform reports more than
+  $700 million in funding commitments across 20,000+ accredited investors. Fundable is not a registered
+  broker-dealer and does not execute securities transactions or offer investment advice. As of this
+  enrichment pass Fundable publishes no public API, developer portal, SDKs, or machine-readable
+  specification, so this profile captures company identity, published policy/support surfaces, and a
+  probed domain-security posture rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/fundable/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fundraising
+- Startups
+- Crowdfunding
+- Investors
+- Fintech
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fundable-domain-security.yml
 - type: Website
-  url: https://startups.com
+  url: https://www.fundable.com
+- type: Support
+  url: https://help.fundable.com
+- type: HelpCenter
+  url: https://help.fundable.com
+- type: Blog
+  url: https://www.fundable.com/learn
+- type: TermsOfService
+  url: https://www.fundable.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.fundable.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

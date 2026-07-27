@@ -1,0 +1,14 @@
+{
+  "repo": "fundable",
+  "feeds": [
+    {
+      "source": "https://help.fundable.com",
+      "feed_url": "https://help.fundable.com",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-25T15:00:33Z"
+}
